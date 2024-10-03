@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #ff5e81;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+/* Стили для кнопок с анимацией */
+button {
+    background-color: #ff5e81;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Анимация на кнопку "Yes" (сердечки) */
+button#yesBtn::before {
+    content: '🥰';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+button#yesBtn:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -70%);
+}
+
+/* Плавная смена цвета и увеличение кнопки при наведении */
+button:hover {
+    background-color: #ff4060;
+    transform: scale(1.05);
+}
+
+/* Анимация на кнопку "No" (грустные смайлики) */
+button#noBtn::before {
+    content: '😢';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+button#noBtn:hover::before {
+    opacity: 1;
+    transform: translate(-50%, -70%);
+}
+
+img {
+    margin-top: 20px;
+    border-radius: 10px;
+}

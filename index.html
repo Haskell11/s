@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Татьяна Вячеславовна, не хотите ли погулять?😏</h1>
+        <div class="buttons">
+            <button id="yesBtn">Да</button>
+            <button id="noBtn">Нет</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('yesBtn').addEventListener('click', function() {
+            window.location.href = 'happy.html';
+        });
+
+        document.getElementById('noBtn').addEventListener('click', function() {
+            window.location.href = 'sorry.html'; // Перенаправление на новую страницу
+        });
+    </script>
+</body>
+</html>

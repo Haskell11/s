@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .continue-button {
+            display: inline-block;
+            background-color: #ff5e81;
+            color: white;
+            padding: 15px 50px;
+            border: none;
+            border-radius: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none; /* Убираем подчеркивание */
+        }
+
+        .continue-button:hover {
+            background-color: #ff4060;
+        }
+
+        .continue-button span {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .continue-button::before {
+            content: "🔥🔥";
+            margin-right: 10px;
+        }
+
+        .continue-button::after {
+            content: "🔥🔥";
+            margin-left: 10px;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Гифка радостного котика -->
+        <img src="cat.gif" alt="Happy Cat">
+      
+        <!-- Текст -->
+        <h1>УРАААА!!! НИКУДА НЕ УХОДИ</h1>
+
+        <!-- Кнопка "Продолжить" -->
+        <a href="date-selection.html" class="continue-button">
+            <span>Продолжить</span>
+        </a>
+    </div>
+</body>
+</html>
